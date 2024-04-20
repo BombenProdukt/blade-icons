@@ -1,81 +1,81 @@
 {
-    "name": "bombenprodukt/blade-icons",
-    "description": "A package to easily use icon families with Laravel Blade.",
-    "license": "MIT",
-    "keywords": [
-        "BombenProdukt",
-        "laravel",
-        "blade-icons"
-    ],
-    "authors": [
-        {
-            "name": "Brian Faust",
-            "email": "brian@bombenprodukt.com",
-            "role": "Developer"
-        }
-    ],
-    "homepage": "https://github.com/faustbrian/blade-icons",
-    "require": {
-        "php": "^8.2",
-        "illuminate/support": "^10.0",
-        "bombenprodukt/laravel-package-powerpack": "^1.0"
-    },
-    "require-dev": {
-        "bombenprodukt/php-cs-fixer-config": "^1.0",
-        "ergebnis/composer-normalize": "^2.2",
-        "friendsofphp/php-cs-fixer": "^3.15",
-        "infection/infection": "^0.27.0",
-        "nunomaduro/collision": "^7.0",
-        "nunomaduro/larastan": "^2.0",
-        "orchestra/testbench": "^8.0",
-        "pestphp/pest": "^2.0",
-        "pestphp/pest-plugin-laravel": "^2.0",
-        "pestphp/pest-plugin-watch": "^2.0",
-        "phpstan/extension-installer": "^1.1",
-        "phpstan/phpstan-deprecation-rules": "^1.0",
-        "phpstan/phpstan-phpunit": "^1.0",
-        "phpstan/phpstan-strict-rules": "^1.5",
-        "spatie/laravel-ray": "^1.2"
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "autoload": {
-        "psr-4": {
-            "BombenProdukt\\BladeIcons\\": "src"
-        },
-        "files": [
-            "src/helpers.php"
-        ]
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests"
-        }
-    },
-    "config": {
-        "allow-plugins": {
-            "pestphp/pest-plugin": true,
-            "phpstan/extension-installer": true,
-            "ergebnis/composer-normalize": true,
-            "infection/extension-installer": true
-        },
-        "sort-packages": true
-    },
-    "extra": {
-        "laravel": {
-            "aliases": {
-                "Icons": "BombenProdukt\\BladeIcons\\Facades\\IconFamilyRegistry"
-            },
-            "providers": [
-                "BombenProdukt\\BladeIcons\\ServiceProvider"
-            ]
-        }
-    },
-    "scripts": {
-        "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
-        "analyse": "vendor/bin/phpstan analyse",
-        "format": "vendor/bin/php-cs-fixer fix",
-        "test": "vendor/bin/pest",
-        "test-coverage": "vendor/bin/pest --coverage"
+  "name": "bombenprodukt/blade-icons",
+  "description": "A package to easily use icon families with Laravel Blade.",
+  "license": "MIT",
+  "keywords": [
+    "BombenProdukt",
+    "laravel",
+    "blade-icons"
+  ],
+  "authors": [
+    {
+      "name": "Brian Faust",
+      "email": "brian@bombenprodukt.com",
+      "role": "Developer"
     }
+  ],
+  "homepage": "https://github.com/faustbrian/blade-icons",
+  "require": {
+    "php": "^8.2",
+    "bombenprodukt/laravel-package-powerpack": "^2.0",
+    "illuminate/support": "^11.0"
+  },
+  "require-dev": {
+    "bombenprodukt/php-cs-fixer-config": "^2.0",
+    "ergebnis/composer-normalize": "^2.2",
+    "friendsofphp/php-cs-fixer": "^3.15",
+    "infection/infection": "^0.27.0",
+    "nunomaduro/collision": "^8.0",
+    "nunomaduro/larastan": "^2.0",
+    "orchestra/testbench": "^9.0",
+    "pestphp/pest": "^2.0",
+    "pestphp/pest-plugin-laravel": "^2.0",
+    "pestphp/pest-plugin-watch": "^2.0",
+    "phpstan/extension-installer": "^1.1",
+    "phpstan/phpstan-deprecation-rules": "^1.0",
+    "phpstan/phpstan-phpunit": "^1.0",
+    "phpstan/phpstan-strict-rules": "^1.5",
+    "spatie/laravel-ray": "^1.2"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "BombenProdukt\\BladeIcons\\": "src"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "ergebnis/composer-normalize": true,
+      "infection/extension-installer": true,
+      "pestphp/pest-plugin": true,
+      "phpstan/extension-installer": true
+    },
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "aliases": {
+        "Icons": "BombenProdukt\\BladeIcons\\Facades\\IconFamilyRegistry"
+      },
+      "providers": [
+        "BombenProdukt\\BladeIcons\\ServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
+    "analyse": "vendor/bin/phpstan analyse",
+    "format": "vendor/bin/php-cs-fixer fix",
+    "test": "vendor/bin/pest",
+    "test-coverage": "vendor/bin/pest --coverage"
+  }
 }
