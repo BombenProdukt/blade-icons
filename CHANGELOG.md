@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+<a name="2.0.0"></a>
+## [2.0.0] - 2024-04-20
+
 <a name="1.1.0"></a>
 ## [1.1.0] - 2023-06-15
 ### Added
@@ -33,7 +36,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <a name="1.0.0"></a>
 ## 1.0.0 - 2023-04-26
 
-[Unreleased]: https://github.com/faustbrian/blade-icons/compare/1.1.0...HEAD
+[Unreleased]: https://github.com/faustbrian/blade-icons/compare/2.0.0...HEAD
+[2.0.0]: https://github.com/faustbrian/blade-icons/compare/1.1.0...2.0.0
 [1.1.0]: https://github.com/faustbrian/blade-icons/compare/1.0.5...1.1.0
 [1.0.5]: https://github.com/faustbrian/blade-icons/compare/1.0.4...1.0.5
 [1.0.4]: https://github.com/faustbrian/blade-icons/compare/1.0.3...1.0.4
